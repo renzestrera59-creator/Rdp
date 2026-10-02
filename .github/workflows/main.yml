@@ -1,4 +1,4 @@
-name: RDP
+RDP
 on:
 workflow_dispatch:
 jobs:
@@ -39,4 +39,4 @@ $rawPassword += $charSet.Number | Get-Random -Count 4
 $rawPassword += $charSet.Special | Get-Random -Count 4
 $password = -join ($rawPassword | Sort-Object { Get-Random })
 $securePass = ConvertTo-SecureString $password -AsPlainText -Force
-New-
+New-LocalUs
